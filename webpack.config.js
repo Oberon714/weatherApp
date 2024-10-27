@@ -1,7 +1,6 @@
 // webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const historyApiFallback = require("connect-history-api-fallback");
 
 module.exports = {
   mode: "development",
@@ -11,17 +10,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  devServer: {
-    static: {
-        directory: path.resolve(__dirname, "dist")
-    },
-    port: 3000,
-    open: true,
-    hot: true,
-    compress: true,
-    historyApiFallback: true,
-  },
-
   devtool: "eval-source-map",
   devServer: {
     watchFiles: ["./src/template.html"],
