@@ -1,0 +1,36 @@
+body{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+}
+
+
+.container{
+    background: linear-gradient(90deg, rgb(218, 73, 136) 0%, rgb(79, 130, 188) 100%);
+    border: solid peachpuff 20%;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+    margin: 200px auto;
+    padding: 40px;
+}
+
+.input-field{
+    border-radius: 6px;
+    background-color: hsl(34, 24%, 83%);
+    
+}
+
+.btn{
+    background-color: rgb(129, 226, 129);
+    border-radius: 4px;
+}
+.btn:hover{
+    background-color: rgb(88, 156, 88);
+}
+
+.temp, .humidity{
+    font-size: 25px;
+    color: aliceblue;   
+}
